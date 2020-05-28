@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
+import Carousel from "./Carousel";
+import './Carousel.css';
 const common = new PujariGCommon();
 
 
@@ -155,6 +157,10 @@ class Home extends Component {
           </a>
         </div>
 
+          <div className="bs-example container">
+                        <Carousel />
+          </div>
+     
         <section className="page-section" id="services">
           <div className="container">
             <div className="row">
