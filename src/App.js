@@ -10,8 +10,7 @@ import {Image, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 /* added code */
 import "./App.css";
 import "./test.js";
-import Carousel from "./Carousel";
-import './Carousel'
+
 
 
 const common = new PujariGCommon();
@@ -50,11 +49,7 @@ class App extends React.Component {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" id="mainNav">
         <div className="container" >    
           
-                        <div className="bs-example container">
-                        <Carousel />
-                      </div>
-
-
+                        
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
           
