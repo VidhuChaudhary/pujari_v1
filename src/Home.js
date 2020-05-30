@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
-import Carousel from "./Carousel";
-import './Carousel.css';
+
+import Owldemo1 from './Owldemo1' ;
+import Owldemo3 from './Owldemo3' ; 
+import Owldemo2 from './Owldemo2' ; 
+import OwlDemo from './Owldemo'
 const common = new PujariGCommon();
 
 
@@ -157,9 +160,7 @@ class Home extends Component {
           </a>
         </div>
 
-          <div className="bs-example container">
-                        <Carousel />
-          </div>
+          
      
         <section className="page-section" id="services">
           <div className="container">
@@ -176,35 +177,12 @@ class Home extends Component {
                 </h3>
               </div>
             </div>
-            <div className="row text-center animated bounce">
-            
-              <div className="col-md-4 showbox ">
-              
-                <img
-                  className="img-fluid  "
-                  src={window.location.origin+"/img/one.jpg"}
-                  alt="Satyanarayan Vrat Katha"
-                />
-               
-                <h4 className="service-heading">Satyanarayan Vrat Katha</h4>
-              </div>
-              <div className="col-md-4 showbox">
-                <img
-                  className="img-fluid "
-                  src={window.location.origin+"/img/two.jpg"}
-                  alt="Satyanarayan Vrat Katha"
-                />
-                <h4 className="service-heading ">Grih Parvesh</h4>
-              </div>
-              <div className="col-md-4 showbox ">
-              
-                <img className="img-fluid" src={window.location.origin+"/img/mundan.jpg"} alt="Mundan" />
-                
-                <h4 className="service-heading">Mundan</h4>
-              </div>
-            </div>             
+            <Owldemo1></Owldemo1>        
           </div>
         </section>
+        
+          
+
 
         <section className="page-section panditG" id="services">
           <div className="container">
@@ -248,10 +226,12 @@ class Home extends Component {
                 
                 <h5 className="service-heading effect1">P. Dwarika Prasad Gautam Ji</h5><h6> Jhansi</h6>
               </div>
-            </div>             
+            </div>  
+                      
           </div>
-        </section>       
-        
+        </section>   
+ {/*pandit section */} 
+         <Owldemo1></Owldemo1>
 
         <section className="page-section" id="about">
           <div className="container">
@@ -371,6 +351,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
+       
         <section className="page-section team" id="about">
           <div className="container">
             <div className="row">
@@ -699,6 +680,125 @@ class Home extends Component {
             </div>
           </div>
         </footer>
+
+
+        
+{/* detail page section starts here */}
+
+<section class="detail-page">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-5 image-section">
+            <div class="detail-image">
+            <img
+                  className="img-fluid "
+                  src={window.location.origin+"/img/one.jpg"}
+                  alt="Satyanarayan Vrat Katha"
+                />
+            </div>
+            </div>
+            <div class="col-md-7 content-section">
+                  <p class="product-title">Name</p>
+                  <p class="product-info"><span>Place</span> | <span>Language</span></p>
+                  <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          About this Puja
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body aboutproduct-detail">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Detailed View
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body aboutproduct-detail">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+ 
+</div>
+  <div><button  className="align-middle btn btn-primary btn-lg text-uppercase btnsubmit btn-block detail-btn" type="submit">submit</button></div>
+            </div>
+        </div> 
+        <hr/>
+        <div class="row">
+            <div class="col-md-5">
+            <p class="review-heading">Customer reviews & ratings</p>
+              <div class="row">
+              
+                <div class="col-md-3"><span class="rating-number">4.1</span></div>
+                <div class="col-md-9">
+                  <p><span ><i class="fa fa-star" aria-hidden="true">
+
+                  </i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></span> </p>
+                  <p>141 ratings</p>
+                </div>
+              </div>  
+        <div class="row">
+            <div class="ml-3 rvwbtn"><a class=" ReviewBtn"  
+             type="button">See all reviews</a></div>
+            <div class="ml-3 writervwbtn"><a class=" writeReviewBtn"  
+             type="button">Write a review</a></div>
+        </div>  
+            </div>
+            <div class="col-md-7">
+              <div>
+                  <p class="review-highlights ">Review one</p>
+                  <p><span ><i class="fa fa-star" aria-hidden="true">
+
+                  </i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></span><span class="review-title">Just amazing!</span> </p>
+                  <p class="review-text">tAnim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. 
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+              </div>
+              <div>
+
+              </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+        <p class="gallery-text mx-auto">Gallery</p>
+        </div>
+        <div class="row gallery-imgs">
+        
+            <div class="col-md-3"><img
+                  className="img-fluid border "
+                  src={window.location.origin+"/img/one.jpg"}
+                  alt="Satyanarayan Vrat Katha"
+                /></div>
+            <div class="col-md-3 "><img
+                  className="img-fluid border"
+                  src={window.location.origin+"/img/one.jpg"}
+                  alt="Satyanarayan Vrat Katha"
+                /></div>
+            <div class="col-md-3"><img
+                  className="img-fluid border"
+                  src={window.location.origin+"/img/one.jpg"}
+                  alt="Satyanarayan Vrat Katha"
+                /></div>
+            <div class="col-md-3"><img
+                  className="img-fluid border"
+                  src={window.location.origin+"/img/one.jpg"}
+                  alt="Satyanarayan Vrat Katha"
+                /></div>
+        </div> 
+        </div>                
+        </section>
 
       
       </div>

@@ -6,10 +6,16 @@ import Booknow from "./Booknow";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
+
 import {Image, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 /* added code */
 import "./App.css";
 import "./test.js";
+import Owldemo1 from './Owldemo1' ; 
+import Owldemo3 from './Owldemo3' ;
+import Owldemo2 from './Owldemo2' ; 
+import OwlDemo from './Owldemo'
+
 
 
 
@@ -93,6 +99,7 @@ class App extends React.Component {
         </div>
         </Navbar>
       <Switch>
+      {/* on click event image deatil page section*/}
         <Route exact path="/booknow" component={Booknow} />
         <Route exact path="/" component={Home} />
       </Switch>

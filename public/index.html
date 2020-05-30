@@ -24,7 +24,10 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
@@ -55,6 +58,23 @@
   <body>
     <!--<noscript>You need to enable JavaScript to run this app.</noscript>-->
     <div id="root"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+      var slider = tns({
+        container: ".my-slider",
+        loop: false,
+        responsive: {
+          "350": {
+            items: 2,
+          },
+          "500": {
+            items: 3,
+          },
+        },
+        swipeAngle: false,
+        speed: 400,
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -66,7 +86,8 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https:code.jquery.com/jquery-3.4.1min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
